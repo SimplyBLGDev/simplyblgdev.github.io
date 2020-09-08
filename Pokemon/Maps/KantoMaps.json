@@ -1,0 +1,9 @@
+{
+    "name":"Kanto",
+    "games":[ "Red", "Blue", "Yellow", "Red (J)", "Green (J)" ],
+    "maps":[
+        { "name":"Pallet Town", "dimensions":[32, 88, 8, 8] },
+        { "name":"Route 1", "dimensions":[32, 72, 8, 16] },
+        { "name":"Viridian City", "dimensions":[32, 64, 8, 8] }
+    ]
+}
