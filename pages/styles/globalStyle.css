@@ -5,7 +5,4 @@
 .font-roboto    { font-family: 'Roboto', sans-serif; font-weight: 300;}
 .font-white     { color:whitesmoke}
 
-.pixelated      { image-rendering: optimizeSpeed;}
-.interactiveMap { width: 35%; height: 35%;}
-
 .content        { margin:4px; padding:4px;}

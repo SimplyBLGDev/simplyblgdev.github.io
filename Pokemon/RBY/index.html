@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html id="base">
-    <script src="/pages/pageLoader.js"></script>
-    <head><meta charset="utf-8"></head>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/Pokemon/PokemonStyle.css">
+    </head>
     <div id="Content">
         <h1 class="container-fluid text-center">Kanto interactive map</h1>
-        <img class="pixelated interactiveMap" src="Kanto.png" alt="Kanto Regional Map" usemap="#Kanto" width="160" height="136">
-        <map id="gameMap" class="pixelated interactiveMap" name="Kanto"></map>
+        <div class="container-fluid">
+            <img class="interactiveMap" src="Kanto.png" alt="Kanto Regional Map" usemap="#Kanto" width="160" height="136">
+            <map id="gameMap" name="Kanto">
+            </map>
+        </div>
     </div>
     <div id="Footer">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="/js/imageMapResizer.min.js"></script>
         <script src="/Pokemon/PokemonMapsScript.js"></script>
     </div>
+    <script src="/pages/pageLoader.js"></script>
 </html>
