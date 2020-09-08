@@ -1,23 +1,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!--JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!--Roboto font-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap" rel="stylesheet"> 
-    <link href="/pages/styles/globalStyle.css" rel="stylesheet" >
     <title>SimplyBLG</title>
 </head>
 <body class="bg-blgdarker font-roboto font-white">
     <nav class="navbar navbar-expand-lg navbar-dark bg-blgnavbar">
-        <a class="navbar-brand" href="#">SimplyBLG</a>
+        <a class="navbar-brand" href="/index.html">SimplyBLG</a>
+        
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Data</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pokémon Maps
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Gen 1 - Kanto</a>
+                  <a class="dropdown-item" href="#">Gen 2 - Johto</a>
+                  <a class="dropdown-item" href="#">Gen 3 - Hoenn</a>
+                  <a class="dropdown-item" href="#">Gen 4 - Sinnoh</a>
+                  <a class="dropdown-item" href="#">Gen 5 - Unova</a>
+                  <a class="dropdown-item" href="#">Gen 6 - Kalos</a>
+                  <a class="dropdown-item" href="#">Gen 7 - Alola</a>
+                  <a class="dropdown-item" href="#">Gen 8 - Galar</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Gen 3 - Kanto</a>
+                  <a class="dropdown-item" href="#">Gen 4 - Johto</a>
+                  <a class="dropdown-item" href="#">Gen 6 - Hoenn</a>
+                </div>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="#">Data2</a>
             </li>
@@ -26,7 +36,7 @@
             </li>
         </ul>
     </nav>
-    <div id="Content">
+    <div id="Content" class="content">
 
     </div>
 </body>
@@ -36,3 +46,22 @@
         SimplyBLG's 2020
     </div>
 </footer>
+
+<!--External scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Bootstrap+ CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!--Roboto font-->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap" rel="stylesheet"> 
+<link href="/pages/styles/globalStyle.css" rel="stylesheet">
+
+<script>
+    $(document).ready(function(){
+      $('.dropdown-submenu a.test').on("click", function(e){
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+      });
+    });
+    </script>
