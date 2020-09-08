@@ -6,6 +6,6 @@
 .font-white     { color:whitesmoke}
 
 .pixelated      { image-rendering: optimizeSpeed;}
-.interactiveMap { width: 35%; height:35%;}
+.interactiveMap { width: 35%; height: 35%;}
 
 .content        { margin:4px; padding:4px;}

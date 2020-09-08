@@ -2,7 +2,7 @@ loadMap("Kanto");
 
 function loadMap(regionName) {
     var region = getRegionJSON(regionName);
-    var mapElement = document.getElementById("gameMap");
+    var mapElement = $('#gameMap');
 
     for (var i = 0; i < region.maps.length; i++) {
         var newArea = document.createElement("area");
@@ -13,10 +13,13 @@ function loadMap(regionName) {
 
         newArea.shape = "rect";
         newArea.coords = x + ", " + y + ", " + x2 + ", " + y2;
+        newArea.title = region.maps[i].name;
         newArea.alt = region.maps[i].name;
         newArea.href = "#";
-        mapElement.appendChild(newArea);
+        mapElement.append(newArea);
     }
+
+    mapElement.imageMapResize();
 }
 
 function getRegionJSON(regionName) {
