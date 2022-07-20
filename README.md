@@ -1,1 +1,0 @@
-# simplyblgdev.github.io
